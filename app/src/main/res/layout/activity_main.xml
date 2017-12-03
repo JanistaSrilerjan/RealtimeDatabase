@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jnstar.realtimedatabase.MainActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:gravity="">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:textSize="17sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_username"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Fill Your Username"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:textSize="17sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Fill Your Password"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Save"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Show"
+        android:textColor="#FFFFFF"
+        android:onClick="saveRecord"/>
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Message!"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textSize="22dp"
+        android:textColor="@color/colorAccent"
+        android:onClick="displayMsg"/>
+
+
+</LinearLayout>
